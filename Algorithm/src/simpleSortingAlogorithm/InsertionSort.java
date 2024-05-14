@@ -1,4 +1,4 @@
-package SortingAlogorithm;
+package simpleSortingAlogorithm;
 
 public class InsertionSort {
 		
