@@ -8,18 +8,19 @@ public class SelectionSort {
 		arr[idx2] = tmp;
 	}
 	
-	public static void sortBySelectionSort(int[] arr) {
-	
+	public static void sortBySelectionSort(int arr[]) {
+		//targetIdx = i (최솟값이 위치할 자리!)
 		for(int i=0; i<arr.length-1; i++) {
 			int minIdx = i;
-			//최솟값 찾기 for문
 			for(int j=i+1; j<arr.length; j++) {
-				if(arr[j] <arr[minIdx]) {
+				if(arr[minIdx]>arr[j]){
 					minIdx = j;
 				}
 			}
-			swap(arr, i, minIdx);
+			swap(arr,i,minIdx);
 		}
+		
+		
 	}
 
 }
